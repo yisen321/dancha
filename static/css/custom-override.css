@@ -1,0 +1,262 @@
+/* ================================================
+   Dancha Industry Co., LTD - 全新排版 + 深绿金配色
+   与 web 2 (Interactive Youfang) 完全不同的设计
+   ================================================ */
+
+/* === 全局字体 === */
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* === 顶部信息栏：改为深色窄条 === */
+.fusion-header-v5 .fusion-secondary-header {
+  background-color: #0a1a12 !important;
+  border-bottom: 2px solid #c8a45a !important;
+  padding: 6px 0 !important;
+  min-height: auto !important;
+}
+.fusion-secondary-header .fusion-contact-info,
+.fusion-secondary-header .fusion-contact-info a {
+  color: #c8a45a !important;
+  font-size: 12px !important;
+  letter-spacing: 1px !important;
+}
+
+/* === Header：logo 左对齐 + 导航右对齐（单行排列） === */
+.fusion-header-v5 .fusion-header {
+  background-color: #f8f6f0 !important;
+  border-bottom: 1px solid #e0d8c8 !important;
+  padding: 0 !important;
+}
+.fusion-header-v5 .fusion-header .fusion-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 8px 20px !important;
+}
+.fusion-header-v5 .fusion-logo {
+  margin: 0 !important;
+  float: none !important;
+  text-align: left !important;
+  flex-shrink: 0 !important;
+}
+.fusion-logo-link {
+  display: inline-block !important;
+}
+
+/* === 导航菜单栏：改为与 header 合并的样式 === */
+.fusion-secondary-main-menu {
+  background-color: #0d1f17 !important;
+  border-bottom: 3px solid #c8a45a !important;
+}
+.fusion-secondary-main-menu .fusion-row {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+.fusion-main-menu > ul > li > a,
+.fusion-main-menu .fusion-menu-element-list > li > a {
+  color: #e8dcc8 !important;
+  font-size: 13px !important;
+  letter-spacing: 2px !important;
+  font-weight: 500 !important;
+  padding: 14px 18px !important;
+  transition: all 0.3s ease !important;
+}
+.fusion-main-menu > ul > li > a:hover,
+.fusion-main-menu .fusion-menu-element-list > li > a:hover {
+  color: #c8a45a !important;
+  background-color: rgba(200,164,90,0.1) !important;
+}
+.fusion-main-menu > ul > li.current-menu-item > a {
+  color: #c8a45a !important;
+  border-bottom: 2px solid #c8a45a !important;
+}
+.fusion-main-menu > ul > li > a .fusion-background-highlight {
+  background: none !important;
+}
+
+/* === 轮播/slider 区域 === */
+#rev_slider_10_1_wrapper {
+  background: #0d1f17 !important;
+}
+
+/* === 内容区域 === */
+/* About 区域 - 浅米色背景 */
+.fusion-fullwidth.fullwidth-box.fusion-parallax-down {
+  background-color: #f8f6f0 !important;
+}
+
+/* 产品线区域 - 深绿背景 */
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) {
+  background-color: #0d1f17 !important;
+}
+
+/* 标题样式 */
+.fusion-title h2 {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  letter-spacing: 3px !important;
+  font-size: 28px !important;
+}
+.fusion-title h3 {
+  font-size: 15px !important;
+  letter-spacing: 1px !important;
+}
+
+/* 分隔线 */
+.fusion-separator .separator-line,
+.fusion-separator.sep-single {
+  border-color: #c8a45a !important;
+}
+
+/* 图标 */
+.fontawesome-icon.circle-yes {
+  border-color: #c8a45a !important;
+  color: #c8a45a !important;
+  border-width: 2px !important;
+  transition: all 0.3s ease !important;
+}
+.fontawesome-icon.circle-yes:hover {
+  background-color: rgba(200,164,90,0.15) !important;
+  transform: scale(1.1);
+}
+
+/* === 三列图片区域 === */
+.fusion-imageframe img {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+  transition: transform 0.3s ease !important;
+}
+.fusion-imageframe img:hover {
+  transform: scale(1.03) !important;
+}
+
+/* === 联系信息三列区 === */
+.fusion-fullwidth.fullwidth-box .fusion-text p span[style*="color: #99cc00"] {
+  color: #c8a45a !important;
+}
+
+/* === 页面标题栏（子页面） === */
+.fusion-page-title-bar {
+  background-color: #0d1f17 !important;
+  border-bottom: 3px solid #c8a45a !important;
+  padding: 30px 0 !important;
+}
+.fusion-page-title-bar h1,
+.fusion-page-title-bar h3,
+.fusion-page-title-bar .fusion-breadcrumbs,
+.fusion-page-title-bar .fusion-breadcrumbs a {
+  color: #c8a45a !important;
+}
+
+/* === 页脚 === */
+.fusion-footer-widget-area {
+  background-color: #0a1a12 !important;
+  padding: 40px 0 !important;
+}
+.fusion-footer-copyright-area {
+  background-color: #071209 !important;
+  border-top: 2px solid #c8a45a !important;
+  padding: 20px 0 !important;
+}
+.fusion-copyright-notice,
+.fusion-copyright-notice div {
+  color: #8a7a5a !important;
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+}
+
+/* === 按钮 === */
+.fusion-button.button-default,
+.fusion-button-default,
+input[type="submit"] {
+  background-color: #c8a45a !important;
+  color: #0d1f17 !important;
+  border: 2px solid #c8a45a !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  transition: all 0.3s ease !important;
+}
+.fusion-button.button-default:hover,
+.fusion-button-default:hover,
+input[type="submit"]:hover {
+  background-color: transparent !important;
+  color: #c8a45a !important;
+}
+
+/* === 链接 === */
+a {
+  color: #1a6b42;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #c8a45a;
+}
+
+/* === 表格（产品列表页） === */
+.tablepress {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+.tablepress thead th {
+  background-color: #0d1f17 !important;
+  color: #c8a45a !important;
+  border: none !important;
+  padding: 12px 15px !important;
+  letter-spacing: 1px !important;
+}
+.tablepress tbody td {
+  border-bottom: 1px solid #e0d8c8 !important;
+  padding: 10px 15px !important;
+}
+.tablepress tbody tr:hover td {
+  background-color: #f8f6f0 !important;
+}
+
+/* === 表单（RFQ 页面） === */
+.frm_form_field input[type="text"],
+.frm_form_field input[type="email"],
+.frm_form_field textarea,
+.frm_form_field select {
+  border: 1px solid #d0c8b0 !important;
+  border-radius: 4px !important;
+  padding: 10px 14px !important;
+  transition: border-color 0.3s ease !important;
+}
+.frm_form_field input:focus,
+.frm_form_field textarea:focus {
+  border-color: #c8a45a !important;
+  box-shadow: 0 0 0 3px rgba(200,164,90,0.15) !important;
+}
+
+/* === 粘性导航 === */
+.fusion-is-sticky .fusion-header {
+  background-color: #f8f6f0 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+.fusion-sticky-menu > ul > li > a {
+  color: #e8dcc8 !important;
+}
+
+/* === section separator 箭头颜色 === */
+.divider-candy-arrow.bottom {
+  border-top-color: #0d1f17 !important;
+}
+.divider-candy.bottom {
+  border-bottom-color: #0d1f17 !important;
+  border-left-color: #0d1f17 !important;
+}
+
+/* === 响应式微调 === */
+@media (max-width: 800px) {
+  .fusion-header-v5 .fusion-header .fusion-row {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  .fusion-main-menu > ul > li > a {
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+  }
+}
