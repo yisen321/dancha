@@ -3,9 +3,13 @@
    与 web 2 (Interactive Youfang) 完全不同的设计
    ================================================ */
 
-/* === 全局字体 === */
+/* === 全局字体和背景 === */
 body {
   font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  background-color: #0d1f17 !important;
+}
+#wrapper {
+  background-color: #0d1f17 !important;
 }
 
 /* === 顶部信息栏：改为深色窄条 === */
@@ -91,6 +95,124 @@ body {
 /* 产品线区域 - 深绿背景 */
 .fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) {
   background-color: #0d1f17 !important;
+}
+
+/* 深绿背景下的浅色文字 */
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down),
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) p,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) li,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) span,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) div,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) td,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) th {
+  color: #e8dcc8 !important;
+}
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) h1,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) h2,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) h3,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) h4,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) h5,
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) h6 {
+  color: #c8a45a !important;
+}
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) a {
+  color: #c8a45a !important;
+}
+.fusion-fullwidth.fullwidth-box:not(.fusion-parallax-down) a:hover {
+  color: #e8dcc8 !important;
+}
+
+/* === 主内容区域 - 深绿背景 + 浅色文字 === */
+#main {
+  background-color: #0d1f17 !important;
+  color: #e8dcc8 !important;
+}
+#main p,
+#main li,
+#main span:not(.menu-text),
+#main div.post-content,
+#main div.post-content div,
+#main div.post-content p,
+#main div.post-content span,
+#main td,
+#main th {
+  color: #e8dcc8 !important;
+}
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+  color: #c8a45a !important;
+}
+#main a:not(.fusion-logo-link):not(.fusion-background-highlight) {
+  color: #c8a45a !important;
+}
+#main a:not(.fusion-logo-link):not(.fusion-background-highlight):hover {
+  color: #e8dcc8 !important;
+}
+
+/* 浅色背景区域（About等）恢复深色文字 */
+.fusion-parallax-down,
+.fusion-parallax-down p,
+.fusion-parallax-down li,
+.fusion-parallax-down span,
+.fusion-parallax-down div,
+.fusion-parallax-down td,
+.fusion-parallax-down th {
+  color: #333333 !important;
+}
+.fusion-parallax-down h1,
+.fusion-parallax-down h2,
+.fusion-parallax-down h3,
+.fusion-parallax-down h4,
+.fusion-parallax-down h5,
+.fusion-parallax-down h6 {
+  color: #0f4919 !important;
+}
+.fusion-parallax-down a {
+  color: #1a6b42 !important;
+}
+
+/* 覆盖内联 style 中的深色文字 */
+#main .post-content span[style*="color: #000"],
+#main .post-content span[style*="color:#000"],
+#main .post-content span[style*="color: #333"],
+#main .post-content span[style*="color:#333"],
+#main .post-content font[color] {
+  color: #e8dcc8 !important;
+}
+#main .post-content span[style*="color: #000080"],
+#main .post-content span[style*="color:#000080"],
+#main .post-content span[style*="color: #000099"],
+#main .post-content span[style*="color:#000099"],
+#main .post-content span[style*="color: #003366"],
+#main .post-content span[style*="color:#003366"] {
+  color: #c8a45a !important;
+}
+
+/* 浅色背景区域恢复内联颜色 */
+.fusion-parallax-down span[style*="color: #000"],
+.fusion-parallax-down span[style*="color:#000"] {
+  color: #333333 !important;
+}
+.fusion-parallax-down span[style*="color: #0f4919"],
+.fusion-parallax-down span[style*="color:#0f4919"] {
+  color: #0f4919 !important;
+}
+
+/* === 页脚区域文字 === */
+.fusion-footer-widget-area,
+.fusion-footer-widget-area p,
+.fusion-footer-widget-area li,
+.fusion-footer-widget-area span,
+.fusion-footer-widget-area a {
+  color: #e8dcc8 !important;
+}
+.fusion-footer-widget-area h3,
+.fusion-footer-widget-area h4 {
+  color: #c8a45a !important;
 }
 
 /* 标题样式 */
@@ -208,11 +330,18 @@ a:hover {
   letter-spacing: 1px !important;
 }
 .tablepress tbody td {
-  border-bottom: 1px solid #e0d8c8 !important;
+  border-bottom: 1px solid rgba(200,164,90,0.2) !important;
   padding: 10px 15px !important;
+  color: #e8dcc8 !important;
+}
+.tablepress tbody td h5 {
+  color: #c8a45a !important;
+}
+.tablepress tbody td a {
+  color: #c8a45a !important;
 }
 .tablepress tbody tr:hover td {
-  background-color: #f8f6f0 !important;
+  background-color: rgba(200,164,90,0.08) !important;
 }
 
 /* === 表单（RFQ 页面） === */
@@ -220,15 +349,21 @@ a:hover {
 .frm_form_field input[type="email"],
 .frm_form_field textarea,
 .frm_form_field select {
-  border: 1px solid #d0c8b0 !important;
+  border: 1px solid rgba(200,164,90,0.4) !important;
   border-radius: 4px !important;
   padding: 10px 14px !important;
   transition: border-color 0.3s ease !important;
+  background-color: rgba(255,255,255,0.08) !important;
+  color: #e8dcc8 !important;
 }
 .frm_form_field input:focus,
 .frm_form_field textarea:focus {
   border-color: #c8a45a !important;
   box-shadow: 0 0 0 3px rgba(200,164,90,0.15) !important;
+}
+.frm_form_field label,
+.frm_form_field .frm_description {
+  color: #e8dcc8 !important;
 }
 
 /* === 粘性导航 === */
